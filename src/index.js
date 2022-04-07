@@ -4,4 +4,11 @@ const test = {
     c: 5
 }
 
+const test2 = {
+    ...test,
+    d: 1000,
+    e: 99,
+}
+
 console.log(test);
+console.log(test2);
