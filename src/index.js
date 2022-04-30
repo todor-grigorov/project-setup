@@ -1,16 +1,11 @@
-import "./styles/index.scss";
+import { createRoot } from 'react-dom/client';
+// import ReactDOM from "react-dom";
+// import { render } from 'react-dom';
+import App from './components/App';
 
-const test = {
-    a: 1,
-    b: 2,
-    c: 5
-}
+const container = document.getElementById('root');
+const root = createRoot(container);
 
-const test2 = {
-    ...test,
-    d: 1000,
-    e: 99,
-}
+root.render(<App />);
+// render(<App />, document.getElementById("root"))
 
-console.log(test);
-console.log(test2);
